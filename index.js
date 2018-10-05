@@ -1,13 +1,18 @@
+
 var recipes = {
-  
-  prop: 1,
-  
-  prop2:2  
 };
 
+ function updateObjectWithKeyAndValue(object,key,value){
+  
+    var obj = {prop: 1 }
+    
+    recipes.obj= value 
+    
+    return recipes
+
+}
  
  function updateObjectWithKeyAndValue(object, key, value) {
-      
   
      Object.assign({}, object, {key:value} ) ;
      
@@ -39,3 +44,9 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
     
     }
   
+      var obj = {prop: 1} ;
+  
+     Object.assign({}, recipes, {key:value} ) ;
+     
+     return recipes ;
+    
